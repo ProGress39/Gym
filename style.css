@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif; }
+
+.aboutUs h1 {
+  display: inline-block;
+  font-size: 80px; }
+.aboutUs .purpleExo {
+  color: #5E2789; }
+
+/*# sourceMappingURL=style.css.map */
