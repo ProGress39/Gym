@@ -127,3 +127,38 @@ $pFont: 'Mukta', sans-serif;
     text-align: center;
   }
 }
+
+.map {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  .contact{
+    margin-left: 25px;
+    h3 {
+      color: #333333;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .gym_city{
+      font-size: 30px;
+      color: $purpleColor;
+      margin-bottom: -5px;
+    }
+    p {
+      margin-bottom: -1px;
+    }
+    .moreInfo {
+      background-color: $purpleColor;
+      outline: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-family: $pFont;
+      font-weight: lighter;
+      margin-bottom: 18px;
+    }
+  }
+
+}
