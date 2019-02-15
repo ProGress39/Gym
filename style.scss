@@ -158,6 +158,7 @@ $pFont: 'Mukta', sans-serif;
       font-family: $pFont;
       font-weight: lighter;
       margin-bottom: 18px;
+      cursor: pointer;
     }
   }
 }
@@ -168,5 +169,44 @@ $pFont: 'Mukta', sans-serif;
     font-size: 25px;
     color: #333333;
     font-weight: lighter;
+  }
+}
+
+.end {
+  background-color: #171A1B;
+  color: #9a9a9a;
+  .end_column {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .h3 {
+      font-size: 18px;
+      font-weight: 200;
+    }
+  }
+  .first_column {
+    font-size: 14px;
+    margin-left: 15px;
+    letter-spacing: 0.7px;
+  }
+  .opening_hours {
+      li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(154,154,154,0.5);
+      .hours {
+      float: right!important;
+      }
+    }
+  }
+  .city {
+    margin-top: 40px;
+    .h3 {
+      font-size: 18px;
+      font-weight: 200;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 200;
+    }
   }
 }

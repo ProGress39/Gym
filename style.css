@@ -121,12 +121,41 @@
       color: white;
       font-family: "Mukta", sans-serif;
       font-weight: lighter;
-      margin-bottom: 18px; }
+      margin-bottom: 18px;
+      cursor: pointer; }
 
 .partners p {
   font-family: "Mukta", sans-serif;
   font-size: 25px;
   color: #333333;
   font-weight: lighter; }
+
+.end {
+  background-color: #171A1B;
+  color: #9a9a9a; }
+  .end .end_column {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .end .end_column .h3 {
+      font-size: 18px;
+      font-weight: 200; }
+  .end .first_column {
+    font-size: 14px;
+    margin-left: 15px;
+    letter-spacing: 0.7px; }
+  .end .opening_hours li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(154, 154, 154, 0.5); }
+    .end .opening_hours li .hours {
+      float: right !important; }
+  .end .city {
+    margin-top: 40px; }
+    .end .city .h3 {
+      font-size: 18px;
+      font-weight: 200; }
+    .end .city p {
+      font-size: 14px;
+      font-weight: 200; }
 
 /*# sourceMappingURL=style.css.map */
