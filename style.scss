@@ -160,5 +160,13 @@ $pFont: 'Mukta', sans-serif;
       margin-bottom: 18px;
     }
   }
+}
 
+.partners {
+  p {
+    font-family: $pFont;
+    font-size: 25px;
+    color: #333333;
+    font-weight: lighter;
+  }
 }
