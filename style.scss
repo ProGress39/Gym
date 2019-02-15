@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Mukta');
 
 $purpleColor: #5E2789;
 $mainFont: 'Quicksand', sans-serif;
+$pFont: 'Mukta', sans-serif;
 
 * {
   padding: 0;
   margin: 0;
-  font-family: $mainFont;
 }
 
 .aboutUs {
@@ -14,6 +15,7 @@ $mainFont: 'Quicksand', sans-serif;
   padding-right: 0;
   margin-top: 50px;
   margin-bottom: 40px;
+  font-family: $mainFont;
   h1 {
 
   font-size: 80px;
@@ -29,5 +31,99 @@ $mainFont: 'Quicksand', sans-serif;
     color: $purpleColor;
     margin-bottom: -30px;
   }
+}
 
+.offer_message{
+  text-align: center;
+  font-size: 50px;
+  color: #333333;
+  margin-top: 20px;
+  font-family: $pFont;
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  .offer_message_bold {
+    font-weight: bold;
+  }
+}
+
+.offer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: hsla(0, 0%, 0%, 0.9);
+  p {
+    margin-top: 8px;
+  }
+  .icon {
+    margin-top: 10px;
+  }
+}
+
+.dark_background {
+  height: auto;
+  background-color: #17191B;
+  color: white;
+  .block {
+    color: #333333;
+    text-align: center;
+    background-color: white;
+    column-gap: 5px;
+    padding: 10px;
+  }
+}
+
+
+.news{
+   margin-bottom: 50px;
+   p{
+     font-size: 55px;
+     color: #333333;
+     margin-top: 60px;
+     font-family: $pFont;
+     font-weight: lighter;
+     letter-spacing: 0.6px;
+   }
+
+  .photo_container {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+  }
+
+  .photo_container:hover .overlay {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
