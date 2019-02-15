@@ -4,10 +4,19 @@
   margin: 0;
   font-family: "Quicksand", sans-serif; }
 
-.aboutUs h1 {
-  display: inline-block;
-  font-size: 80px; }
-.aboutUs .purpleExo {
-  color: #5E2789; }
+.aboutUs {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  .aboutUs h1 {
+    font-size: 80px; }
+  .aboutUs p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9; }
+  .aboutUs .purpleExo {
+    color: #5E2789;
+    margin-bottom: -30px; }
 
 /*# sourceMappingURL=style.css.map */
