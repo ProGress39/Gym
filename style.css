@@ -7,10 +7,14 @@
   box-sizing: border-box; }
 
 /*Stylizowanie nagłówka*/
+.nav_place {
+  height: 60px; }
+
 .topnav {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   overflow: hidden;
   text-decoration: none;
+  position: fixed;
   z-index: 1;
   width: 100%; }
   .topnav .icon {
@@ -116,12 +120,40 @@
   height: auto;
   background-color: #17191B;
   color: white; }
+  .dark_background .header {
+    font-family: "Mukta", sans-serif;
+    font-size: 60px; }
   .dark_background .block {
     color: #333333;
     text-align: center;
-    background-color: white;
-    column-gap: 5px;
+    background-color: #17191B;
     padding: 10px; }
+    .dark_background .block .block_small {
+      background-color: white;
+      height: 350px;
+      transition: transform .2s; }
+      .dark_background .block .block_small:hover {
+        transform: scale(1.02);
+        z-index: 1; }
+      .dark_background .block .block_small .name_paket {
+        padding-top: 40px;
+        color: #5E2789;
+        font-weight: 400;
+        font-size: 30px; }
+      .dark_background .block .block_small .price {
+        font-size: 40px;
+        position: relative; }
+      .dark_background .block .block_small .price_text {
+        font-size: 18px; }
+      .dark_background .block .block_small button {
+        background-color: white;
+        border: solid 2px #5E2789;
+        border-radius: 25px;
+        padding: 10px 25px 10px 25px;
+        cursor: pointer; }
+        .dark_background .block .block_small button:hover {
+          background-color: #5E2789;
+          color: white; }
 
 .news {
   margin-bottom: 50px; }

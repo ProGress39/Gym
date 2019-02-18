@@ -12,10 +12,15 @@ $pFont: 'Mukta', sans-serif;
 }
 
 /*Stylizowanie nagłówka*/
+.nav_place {
+  height: 60px;
+}
+
 .topnav {
-  background-color: hsla(0, 0%, 100%, 0.8);
+  background-color: hsla(0, 0%, 100%, 1);
   overflow: hidden;
   text-decoration: none;
+  position: fixed;
   z-index: 1;
   width: 100%;
    .icon {
@@ -154,13 +159,53 @@ $pFont: 'Mukta', sans-serif;
   height: auto;
   background-color: #17191B;
   color: white;
+  .header {
+    font-family: $pFont;
+    font-size: 60px;
+  }
   .block {
     color: #333333;
     text-align: center;
-    background-color: white;
-    column-gap: 5px;
+    background-color: #17191B;
     padding: 10px;
+    .block_small {
+      background-color: white;
+      height: 350px;
+      transition: transform .2s;
+      &:hover {
+        transform: scale(1.02);
+        z-index: 1;
+      }
+
+      .name_paket {
+        padding-top: 40px;
+        color: $purpleColor;
+        font-weight: 400;
+        font-size: 30px;
+
+      }
+      .price {
+        font-size: 40px;
+        position: relative;
+
+      }
+      .price_text {
+        font-size: 18px;
+      }
+      button {
+       background-color: white;
+       border: solid 2px $purpleColor;
+       border-radius: 25px;
+       padding: 10px 25px 10px 25px;
+       cursor: pointer;
+       &:hover {
+         background-color: $purpleColor;
+         color: white;
+       }
+      }
+    }
   }
+
 }
 
 
