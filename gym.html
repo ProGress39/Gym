@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <header>
-
+    <div class="topnav" id="myTopnav">
+      <a href="#aboutUs">O nas</a>
+      <a href="#oNas">Oferta</a>
+      <a href="#Karnet">Karnety</a>
+      <a href="#News">Aktualności</a>
+      <a href="#Kontakt">Kontakt</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <img src="https://seeklogo.com/images/F/fitness-logo-2BD9490019-seeklogo.com.png" height="40px" width="40px" alt="logo" />
+    </div>
   </header>
   <body>
 
@@ -51,7 +61,7 @@
         <span class="sr-only">Następne</span>
       </a>
     </div>
-    <div class="container aboutUs">
+    <div class="container aboutUs" id="aboutUs">
       <div class="row">
         <div class="col-12 col-lg-6" >
           <h1 class="purpleExo">COOL</h1>
@@ -68,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="offer_message">
+    <div class="offer_message" id="oNas">
       <span>ZOBACZ CO</span>
       <span class="offer_message_bold">OFERUJEMY</span>
     </div>
@@ -153,7 +163,7 @@
       </div>
     </div>
     <div class="dark_background">
-        <div class="container blocks">
+        <div class="container blocks" id="Karnet">
           <div class="row">
             <div class="col-12">
                <p>POZNAJ NASZE CENY</p>
@@ -222,7 +232,7 @@
       </div>
     </div>
   </div>
-  <div class="container news">
+  <div class="container news" id="News">
     <div class="row">
       <div class="col-12">
         <p>AKTUALNOŚCI</p>
@@ -263,7 +273,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid map">
+  <div class="container-fluid map" id="Kontakt">
     <div class="row">
       <div class="col-12 col-md-5">
         <div class="contact">
