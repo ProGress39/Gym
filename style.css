@@ -21,7 +21,7 @@
   .topnav .icon {
     display: none; }
   .topnav .black_nav {
-    background-color: black;
+    background-color: #171A1B;
     color: white;
     width: 100%;
     display: inline-block;
@@ -92,7 +92,7 @@
   .topnav a {
     float: right;
     color: #333333;
-    padding: 25px 25px;
+    padding: 20px 25px;
     text-decoration: none;
     font-family: "Mukta", sans-serif;
     font-size: 17px;
@@ -115,7 +115,7 @@
   .topnav .logo_text_grey {
     color: #333333; }
   .topnav .logo_text_grey, .topnav .logo_text_purple {
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Racing Sans One', cursive;
     text-align: center; } }
 .aboutUs {
