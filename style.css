@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Mukta");
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
 * {
   padding: 0;
   margin: 0;
@@ -8,28 +9,55 @@
 
 /*Stylizowanie nagłówka*/
 .nav_place {
-  height: 60px; }
+  height: 100px; }
 
 .topnav {
   background-color: white;
   overflow: hidden;
   text-decoration: none;
-  position: fixed;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  position: fixed; }
   .topnav .icon {
     display: none; }
+  .topnav .black_nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    height: 25px; }
+    .topnav .black_nav .left_black_nav {
+      float: left;
+      margin-left: 20px; }
+      .topnav .black_nav .left_black_nav p {
+        display: inline-block;
+        margin-left: 15px; }
+    .topnav .black_nav .right_black_nav {
+      float: right; }
+      .topnav .black_nav .right_black_nav p {
+        display: inline-block;
+        margin-right: 10px; }
 
 /*Media queries dla responsywnego nagłówka*/
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+@media screen and (max-width: 950px) {
+  .topnav a {
     display: none; }
-
   .topnav a.icon {
     float: right;
     display: block;
-    color: #333333; } }
-@media screen and (max-width: 600px) {
+    color: #333333; }
+  .topnav .logo_text_grey, .topnav .logo_text_purple {
+    display: block !important;
+    float: left;
+    color: #333333;
+    font-size: 35px;
+    font-family: 'Racing Sans One', cursive;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 3px; }
+  .topnav .logo_text_purple {
+    color: #5E2789; } }
+@media screen and (max-width: 950px) {
   .topnav.responsive {
     position: relative;
     background-color: white; }
@@ -57,28 +85,39 @@
       color: #5E2789;
       text-decoration: none; }
   .topnav img {
+    display: none; }
+  .topnav .logo_text_grey, .topnav .logo_text_purple {
     display: none; } }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 950px) {
   .topnav a {
-    float: left;
+    float: right;
     color: #333333;
-    text-align: center;
-    padding: 13px 25px;
+    padding: 25px 25px;
     text-decoration: none;
     font-family: "Mukta", sans-serif;
-    font-size: 24px;
+    font-size: 17px;
     background-image: linear-gradient(#cccccc, #cccccc);
     background-size: 0 5px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    transition: all .2s ease-out; }
+    transition: all .2s ease-out;
+    white-space: nowrap; }
     .topnav a:hover {
       text-decoration: none;
       color: #5E2789; }
   .topnav img {
-    float: right;
-    margin-top: 10px;
-    margin-right: 20px; } }
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px; }
+  .topnav .logo_text_purple {
+    color: #5E2789;
+    margin-left: 20px; }
+  .topnav .logo_text_grey {
+    color: #333333; }
+  .topnav .logo_text_grey, .topnav .logo_text_purple {
+    font-size: 55px;
+    font-family: 'Racing Sans One', cursive;
+    text-align: center; } }
 .aboutUs {
   padding-left: 0;
   padding-right: 0;
@@ -150,7 +189,8 @@
         border: solid 2px #5E2789;
         border-radius: 25px;
         padding: 10px 25px 10px 25px;
-        cursor: pointer; }
+        cursor: pointer;
+        outline: none; }
         .dark_background .block .block_small button:hover {
           background-color: #5E2789;
           color: white; }
