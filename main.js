@@ -27,58 +27,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 //Więcej informacji w sekcji informacji nad partnerami
 //Wawer
-var modal = document.getElementById('modal_1');
-var btn = document.getElementById("more_info_1");
-var span = document.getElementsByClassName("close1")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
+document.getElementById("more_info_1").onclick = function() {
+  document.getElementById('modal_1').style.display = "block";
 }
 
 span.onclick = function() {
-  modal.style.display = "none";
+  document.getElementById('modal_1').style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == document.getElementById('modal_1')) {
+    document.getElementById('modal_1').style.display = "none";
   }
 }
 
 //Bemowo
-var modal = document.getElementById('modal_2');
-var btn = document.getElementById("more_info_2");
-var span = document.getElementsByClassName("close2")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
+document.getElementById("more_info_2").onclick = function() {
+  document.getElementById('modal_2').style.display = "block";
 }
 
 span.onclick = function() {
-  modal.style.display = "none";
+  document.getElementById('modal_2').style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == document.getElementById('modal_2')) {
+    document.getElementById('modal_2').style.display = "none";
   }
 }
-
 //Mokotów
-var modal = document.getElementById('modal_3');
-var btn = document.getElementById("more_info_3");
-var span = document.getElementsByClassName("close3")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
+document.getElementById("more_info_3").onclick = function() {
+  document.getElementById('modal_1').style.display = "block";
 }
 
 span.onclick = function() {
-  modal.style.display = "none";
+  document.getElementById('modal_3').style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == document.getElementById('modal_3')) {
+    document.getElementById('modal_3').style.display = "none";
   }
 }
