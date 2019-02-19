@@ -15,7 +15,7 @@
   background-color: white;
   overflow: hidden;
   text-decoration: none;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   position: fixed; }
   .topnav .icon {
@@ -126,6 +126,7 @@
     font-size: 45px;
     font-family: 'Racing Sans One', cursive;
     text-align: center; } }
+/*Sekcja "O nas"*/
 .aboutUs {
   padding-left: 0;
   padding-right: 0;
@@ -142,6 +143,7 @@
     color: #5E2789;
     margin-bottom: -30px; }
 
+/*Sekcja oferty z ikonami*/
 .offer_message {
   text-align: center;
   font-size: 50px;
@@ -182,6 +184,17 @@
       .dark_background .block .block_small:hover {
         transform: scale(1.02);
         z-index: 1; }
+      .dark_background .block .block_small .buyOnline {
+        font-size: 50px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        display: none;
+        top: 5px;
+        bottom: 0;
+        left: 5px;
+        right: 0;
+        height: 98%;
+        width: 98%; }
       .dark_background .block .block_small .name_paket {
         padding-top: 40px;
         color: #5E2789;
@@ -203,6 +216,10 @@
           background-color: #5E2789;
           color: white; }
 
+#small_text {
+  font-size: 12px; }
+
+/*Aktualności*/
 .news {
   margin-bottom: 50px; }
   .news p {
@@ -246,12 +263,13 @@
     transform: translate(-50%, -50%);
     text-align: center; }
 
+/*Sekcja z mapą i informacjami o 3 klubach*/
 .map {
   margin-top: 150px;
   margin-bottom: 70px; }
   .map .contact {
     margin-left: 25px;
-    /* Więcej informacji */ }
+    /* Więcej informacji - okno wyskakujące */ }
     .map .contact h3 {
       color: #333333;
       margin-bottom: 30px;
@@ -288,10 +306,16 @@
       background-color: rgba(0, 0, 0, 0.4); }
     .map .contact .modal-content {
       background-color: #fefefe;
-      margin: 5% auto;
+      margin: 10% auto;
       padding: 20px;
       border: 1px solid #888;
       width: 80%; }
+      .map .contact .modal-content iframe {
+        float: left; }
+      .map .contact .modal-content p {
+        display: block; }
+      .map .contact .modal-content img {
+        margin-top: 15px; }
     .map .contact .close {
       color: #333333;
       float: right;
@@ -302,12 +326,14 @@
         text-decoration: none;
         cursor: pointer; }
 
+/*Sekcja partnerów*/
 .partners p {
   font-family: "Mukta", sans-serif;
   font-size: 25px;
   color: #333333;
   font-weight: lighter; }
 
+/*Sekcja końcowa*/
 .end {
   background-color: #171A1B;
   color: #9a9a9a; }

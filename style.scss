@@ -12,6 +12,7 @@ $pFont: 'Mukta', sans-serif;
   box-sizing: border-box;
 }
 
+
 /*Stylizowanie nagłówka*/
 .nav_place {
  height: 100px;
@@ -21,7 +22,7 @@ $pFont: 'Mukta', sans-serif;
   background-color: white;
   overflow: hidden;
   text-decoration: none;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   position: fixed;
    .icon {
@@ -56,6 +57,7 @@ $pFont: 'Mukta', sans-serif;
      }
    }
 }
+
 
 /*Media queries dla responsywnego nagłówka*/
 @media screen and (max-width: 950px) {
@@ -163,12 +165,12 @@ $pFont: 'Mukta', sans-serif;
       font-size: 45px;
       font-family: 'Racing Sans One', cursive;
       text-align: center;
-
     }
   }
-
 }
 
+
+/*Sekcja "O nas"*/
 .aboutUs {
   padding-left: 0;
   padding-right: 0;
@@ -176,10 +178,7 @@ $pFont: 'Mukta', sans-serif;
   margin-bottom: 40px;
   font-family: $mainFont;
   h1 {
-
   font-size: 80px;
-
-
   }
   p {
   margin-top: 20px;
@@ -193,6 +192,7 @@ $pFont: 'Mukta', sans-serif;
 }
 
 
+/*Sekcja oferty z ikonami*/
 .offer_message{
   text-align: center;
   font-size: 50px;
@@ -240,6 +240,18 @@ $pFont: 'Mukta', sans-serif;
         transform: scale(1.02);
         z-index: 1;
       }
+      .buyOnline {
+        font-size: 50px;
+        background-color: hsla(0, 0%, 0%, 0.4);
+        position: absolute;
+        display: none;
+        top: 5px;
+        bottom: 0;
+        left: 5px;
+        right: 0;
+        height: 98%;
+        width: 98%;
+      }
 
       .name_paket {
         padding-top: 40px;
@@ -270,10 +282,14 @@ $pFont: 'Mukta', sans-serif;
       }
     }
   }
-
 }
 
+#small_text {
+    font-size: 12px;
+  }
 
+
+/*Aktualności*/
 .news{
    margin-bottom: 50px;
    p{
@@ -329,6 +345,8 @@ $pFont: 'Mukta', sans-serif;
   }
 }
 
+
+/*Sekcja z mapą i informacjami o 3 klubach*/
 .map {
   margin-top: 150px;
   margin-bottom: 70px;
@@ -361,7 +379,9 @@ $pFont: 'Mukta', sans-serif;
       margin-bottom: 18px;
       cursor: pointer;
     }
-    /* Więcej informacji */
+
+
+/* Więcej informacji - okno wyskakujące */
     .modal {
       display: none;
       position: fixed;
@@ -377,10 +397,19 @@ $pFont: 'Mukta', sans-serif;
 
     .modal-content {
       background-color: #fefefe;
-      margin: 5% auto;
+      margin: 10% auto;
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
+      iframe {
+        float: left;
+      }
+      p {
+        display: block;
+      }
+      img {
+        margin-top: 15px;
+      }
     }
 
     .close {
@@ -397,6 +426,8 @@ $pFont: 'Mukta', sans-serif;
   }
 }
 
+
+/*Sekcja partnerów*/
 .partners {
   p {
     font-family: $pFont;
@@ -406,6 +437,8 @@ $pFont: 'Mukta', sans-serif;
   }
 }
 
+
+/*Sekcja końcowa*/
 .end {
   background-color: #171A1B;
   color: #9a9a9a;

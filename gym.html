@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Siłownia</title>
+    <title>Cool Fitness</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icons/gym.png" />
   </head>
 
   <!--Nagłówek-->
@@ -81,10 +82,10 @@
     </div>
 
     <!--Sekcja O nas z video-->
-    <div class="container aboutUs" id="aboutUs">
+    <div class="container aboutUs">
       <div class="row">
         <div class="col-12 col-lg-6" >
-          <h1 class="purpleExo">COOL</h1>
+          <h1 class="purpleExo" id="aboutUs">COOL</h1>
           <h1>FITNESS</h1>
           <p>Cool Fitness jest siecią klubów fitness, skupiającą przede wszystkim tych,
             dla których zdrowy tryb życia oraz kondycja fizyczna nie są obojętne.
@@ -100,12 +101,12 @@
     </div>
 
     <!--Sekcja oferty z ikonami-->
-    <div class="offer_message" id="oNas">
+    <div class="offer_message">
       <span>ZOBACZ CO</span>
       <span class="offer_message_bold">OFERUJEMY</span>
     </div>
     <div class="container offer">
-      <div class="row">
+      <div class="row" id="oNas">
         <div class="col-12 col-md-6 col-lg-3 icon">
           <center>
           <img src="icons/1.png" alt="nowoczesne ciężary ikona" height="80px" width="80px" />
@@ -187,23 +188,23 @@
 
     <!--Oferta cennik-->
     <div class="dark_background">
-        <div class="container blocks p-5" id="Karnet">
+        <div class="container blocks p-5">
           <div class="row">
             <div class="col-12">
                <p class="header">POZNAJ NASZE CENY</p>
             </div>
           </div>
-        <div class="row">
+        <div class="row" id="Karnet">
           <div class="col-md-12 col-lg-4 block">
             <div class="block_small">
-              <p class="name_paket">COOL OPEN</p>
-              <br>
-              <span class="price">119</span>
-              <span class="price_text">/ miesięcznie</span>
-              <br>
-              <p>Siłownia + Fitness</p>
-              <br><br>
-              <button type="button">Kup Online</button>
+                <p class="name_paket">COOL OPEN</p>
+                <br>
+                <span class="price">119</span>
+                <span class="price_text">/ miesięcznie</span>
+                <br>
+                <p>Siłownia + Fitness</p>
+                <br><br>
+                <button type="button" onclick="messageAlert()">Kup Online</button>
             </div>
           </div>
           <div class="col-md-12 col-lg-4 block">
@@ -215,7 +216,7 @@
               <br>
               <p>Siłownia + Fitness płatne online</p>
               <br><br>
-              <button type="button">Kup Online</button>
+              <button type="button" onclick="messageAlert()">Kup Online</button>
             </div>
           </div>
           <div class="col-md-12 col-lg-4 block">
@@ -227,7 +228,7 @@
               <br>
               <p>Siłownia + Fitness do 16:00</p>
               <br><br>
-              <button type="button">Kup Online</button>
+              <button type="button" onclick="messageAlert()">Kup Online</button>
             </div>
           </div>
         </div>
@@ -241,7 +242,7 @@
             <br>
             <p>Siłownia + Fitness</p>
             <br><br>
-            <button type="button">Kup Online</button>
+            <button type="button" onclick="messageAlert()">Kup Online</button>
           </div>
         </div>
         <div class="col-md-12 col-lg-4 block">
@@ -253,7 +254,7 @@
             <br>
             <p>Siłownia + Fitness 8 wejść</p>
             <br><br>
-            <button type="button">Kup Online</button>
+            <button type="button" onclick="messageAlert()">Kup Online</button>
           </div>
         </div>
         <div class="col-md-12 col-lg-4 block">
@@ -265,13 +266,13 @@
             <br>
             <p>Siłownia 11:00 - 15:00</p>
             <br><br>
-            <button type="button">Kup Online</button>
+            <button type="button" onclick="messageAlert()">Kup Online</button>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-           <p>Gwarancja stałej ceny obowiązuje przy zachowaniu ciągłości, czyli odnawianiu karnetu co 30 dni.
+           <p id="small_text">Gwarancja stałej ceny obowiązuje przy zachowaniu ciągłości, czyli odnawianiu karnetu co 30 dni.
               Klubowicz, który przerwał ciągłość zobowiązany jest do wniesienia opłaty
               administracyjnej w wysokości 30 PLN przy zakupie kolejnego karnetu.
               Każdorazowe przerwanie ciągłości karnetu w przyszłości skutkuje
@@ -330,62 +331,79 @@
       <div class="col-12 col-md-5">
         <div class="contact">
          <h3>Nasze kluby</h3>
+
+         <!--Wawer-->
          <p class="gym_city">Cool Fitness Wawer</p>
          <p>tel. 123 45 67 89</p>
          <p>12-345 Warszawa</p>
          <p>Aleja Siłowni 12/34</p>
          <button type="button" class="moreInfo" id="more_info1">Więcej informacji</button>
+
          <!--Okienko więcej informacji-->
          <div id="modal1" class="modal">
            <div class="modal-content">
              <span class="close">&times;</span>
              <center>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4113.122648867562!2d21.153227281049205!3d52.19473712036324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDExJzQxLjMiTiAyMcKwMDknMjMuMyJF!5e0!3m2!1spl!2spl!4v1550569132997" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <br>
              <p class="gym_city">Cool Fitness Wawer</p>
              <p>tel. 123 45 67 89</p>
              <p>12-345 Warszawa</p>
              <p>Aleja Siłowni 12/34</p>
+             <img src="https://pngimage.net/wp-content/uploads/2018/06/join-us-today-png-7.png" alt="dołącz do nas" width="120px" height="120px" />
            </center>
            </div>
          </div>
+
+         <!--Bemowo-->
          <p class="gym_city">Cool Fitness Bemowo</p>
          <p>tel. 987 65 43 21</p>
          <p>12-345 Warszawa</p>
          <p>Aleja Słodkości 13/54</p>
          <button type="button" class="moreInfo" id="more_info2">Więcej informacji</button>
+
          <!--Okienko więcej informacji-->
          <div id="modal2" class="modal">
            <div class="modal-content">
              <span class="close">&times;</span>
              <center>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.8434415878432!2d20.89269731523259!3d52.246227264235266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE0JzQ2LjQiTiAyMMKwNTMnNDEuNiJF!5e0!3m2!1spl!2spl!4v1550569699034" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <br>
              <p class="gym_city">Cool Fitness Bemowo</p>
              <p>tel. 987 65 43 21</p>
              <p>12-345 Warszawa</p>
              <p>Aleja Słodkości 13/54</p>
+             <img src="https://pngimage.net/wp-content/uploads/2018/06/join-us-today-png-7.png" alt="dołącz do nas" width="120px" height="120px" />
            </center>
-           </div>
+          </div>
          </div>
+
+         <!--Mokotów-->
          <p class="gym_city">Cool Fitness Mokotów</p>
          <p>tel. 987 64 51 23</p>
          <p>12-345 Warszawa</p>
          <p>Aleja Wielkości 12/33</p>
          <button type="button" class="moreInfo" id="more_info3">Więcej informacji</button>
+
          <!--Okienko więcej informacji-->
          <div id="modal3" class="modal">
            <div class="modal-content">
              <span class="close">&times;</span>
              <center>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.7105846663676!2d21.012369315229527!3d52.17595526942201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDEwJzMzLjQiTiAyMcKwMDAnNTIuNCJF!5e0!3m2!1spl!2spl!4v1550569795952" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <br>
              <p class="gym_city">Cool Fitness Mokotów</p>
              <p>tel. 987 64 51 23</p>
              <p>12-345 Warszawa</p>
              <p>Aleja Wielkości 12/33</p>
+             <img src="https://pngimage.net/wp-content/uploads/2018/06/join-us-today-png-7.png" alt="dołącz do nas" width="120px" height="120px" />
            </center>
            </div>
          </div>
       </div>
     </div>
+
+    <!--Mapa google-->
       <div class="col-12 col-md-7">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4109.943716005905!2d21.02603699879622!3d52.229084693950576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDEzJzQ1LjciTiAyMcKwMDEnNDYuNCJF!5e0!3m2!1spl!2spl!4v1550230886511" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>

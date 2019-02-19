@@ -63,3 +63,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       modal3.style.display = "none";
     }
   }
+
+  //Alert po chęci zakupu karnetu
+  function messageAlert() {
+    alert("Sprzedaż karnetów online niedostępna. Udaj się do najbliższej siłowni Cool Fitness aby dokonać zakupu.");
+  }
