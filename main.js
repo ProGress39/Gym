@@ -4,7 +4,7 @@ $('.carousel').carousel({
 })
 
 //Responsywny navbar
-function myFunction() {
+function responsiveNavbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
